@@ -35,7 +35,7 @@ for lk in links:
     n = 1
     htable = ['№', "Рег. номер", 'Документ', 'Сумма баллов', "Результаты экзаменов"]
 
-    with open(lk + '.csv', mode='w', encoding='utf-16', newline='') as f:
+    with open(lk + '.csv', mode='w', encoding='utf-8', newline='') as f:
 
         wr = csv.writer(f)
         wr.writerow(['Budget:' + str(budget)])
