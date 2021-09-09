@@ -2,11 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
-links = {'Электроэнергетика и электротехника (Э)': "https://pk.altstu.ru/abitura/list/fakspc/55/",
-         'Информатика и вычислительная техника (ИВТ)': 'https://pk.altstu.ru/abitura/list/fakspc/82/',
-         'Прикладная информатика (ПИЭ)': 'https://pk.altstu.ru/abitura/list/fakspc/83',
-         'Информационная безопасность (ИБ)': 'https://pk.altstu.ru/abitura/list/fakspc/85/#21111543',
-         'Программная инженерия (ПИ)': 'https://pk.altstu.ru/abitura/list/fakspc/84/#21111543'
+links = {'1': "https://pk.altstu.ru/abitura/list/fakspc/55/",
+         '2': 'https://pk.altstu.ru/abitura/list/fakspc/82/',
+         '3': 'https://pk.altstu.ru/abitura/list/fakspc/83',
+         '4': 'https://pk.altstu.ru/abitura/list/fakspc/85/#21111543',
+         '5': 'https://pk.altstu.ru/abitura/list/fakspc/84/#21111543'
          }
 
 for lk in links:
@@ -33,9 +33,9 @@ for lk in links:
     addSeets = (lbudget - lb) + (cbudget - cb)
     budget += addSeets
     n = 1
-    htable = ['№', "Рег. номер", 'Документ', 'Сумма баллов', "Результаты экзаменов"]
+    htable = ['a', "b", 'c', 'd', "e"]
 
-    with open(lk + '.csv', mode='w', encoding='utf-8', newline='') as f:
+    with open(lk + '.csv', mode='w', encoding='unicode', newline='') as f:
 
         wr = csv.writer(f)
         wr.writerow(['Budget:' + str(budget)])
