@@ -83,7 +83,10 @@ while True:
                 'или такой команду еще не существет'
 
             )
-        tb.polling()
+                
+        tb.polling(none_stop=True)
+        
     except Exception as e:
+        
         time.sleep(1)
         print(e)
