@@ -79,5 +79,4 @@ def replies_to(message):
         'или такой команду еще не существет'
 
     )
-print('Hi')
 tb.polling()
