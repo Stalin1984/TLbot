@@ -13,7 +13,6 @@ memes = [
     'https://vk.com/photo6630825_305221409',
     'https://vk.com/photo6630825_305221491',
     'https://vk.com/photo6630825_319710575',
-    'https://vk.com/photo6630825_305221525',
     'https://vk.com/photo6630825_319710589'
 ]
 
