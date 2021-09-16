@@ -24,9 +24,9 @@ replies_time = ['скажи, а сколько времени?','скажи а �
 def comands(message):
 
     if message.text == '/start':
-        tb.send_message(message.chat.id, 'Привет, '+message.from_user.first_name + " " + message.from_user.last_name + "!")
+        tb.send_message(message.chat.id, 'Привет, '+ str(message.from_user.first_name) + " " + str(message.from_user.last_name) + "!")
     if message.text == '/myid':
-        tb.send_message(message.chat.id, "Твой id: " + message.from_user.username)
+        tb.send_message(message.chat.id, "Твой id: " + str(message.from_user.username))
     elif message.text == '/help':
 
         tb.send_message(message.chat.id,
@@ -56,7 +56,7 @@ def replies_to(message):
 
         tm = datetime.now()
         current_time = tm.strftime("%H:%M:%S")
-        tb.send_message(message.chat.id, current_time)
+        tb.send_message(message.chat.id, str(current_time))
 
     elif message.text.lower() in ['за кого мне голосовать?', 'путин или обама?']:
 
