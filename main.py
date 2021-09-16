@@ -84,7 +84,7 @@ while True:
 
             )
                 
-        tb.polling(none_stop=True)
+        tb.polling()
         
     except Exception as e:
         
