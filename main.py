@@ -3,7 +3,6 @@ import telebot
 from datetime import datetime
 import random
 
-
 while True:
     
     try:
@@ -87,6 +86,6 @@ while True:
         tb.polling()
         
     except Exception as e:
-        
         time.sleep(1)
-        print(e)
+        with open(current_time+'.txt') as log:
+            log.write(str(e))
